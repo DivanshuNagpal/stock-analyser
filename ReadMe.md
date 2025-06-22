@@ -1,13 +1,13 @@
 # 📈 Stock Analyser
 
-A lightweight web application for analyzing US stock data using live APIs.
+A lightweight web application for analysing US stock data using live APIs.
 
 ---
 
 ## 🚀 Features
 
 - 🔍 Search US stocks by name or symbol
-- 📊 View real-time stock price and data
+- 📊 View real-time stock price 
 - 🔁 Auto-refresh support 
 - 📈 Charting integration 
 - 💡 Minimalist and responsive UI
@@ -19,4 +19,4 @@ A lightweight web application for analyzing US stock data using live APIs.
 - HTML
 - CSS
 - JavaScript
-- Stock API (e.g., Financial Modeling Prep / RapidAPI / other free sources)
+- Stock API (e.g., Financial Modelling Prep / RapidAPI / other free sources)
