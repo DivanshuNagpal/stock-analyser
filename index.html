@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Analyser</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-text">
+        <h2>Hello, Divanshu</h2>
+      </div>
+      <div class="form">
+        <label for="name" class="text-name">Enter stock symbol (TSLA, AAPL, etc):</label><br />
+        <input type="text" id="name" name="name" required placeholder="Enter Stock Name" /><br /><br />
+        <select id="year" name="year">
+          <option value="" disabled selected>Select Time Period</option>
+          <option value="1 Month">1 Month</option>
+          <option value="1 Year">1 Year</option>
+          <option value="3 Year">3 Year</option>
+          <option value="5 Year">5 Year</option>
+        </select><br />
+        <input type="submit" value="Send" class="submit" />
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="header">
+        Stock Analysis Tool
+        <img src="stock-market.png" alt="candle-graph" class="candle" />
+        <a href="#"><img src="user.png" alt="user" class="userPfp" /></a>
+        <a href="#" class="home">Home</a>
+        <a href="#" class="home">About Us</a>
+        <a href="#" class="home">Contact Us</a>
+      </div>
+      <div class="main-text">
+        With the help of this tool you can check information for your particular US stock-market.
+      </div>
+      <div id="priceDisplay" class="price-display"></div>
+      <canvas id="stockChart" width="600" height="300"></canvas>
+      <button id="downloadBtn">Download Chart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
